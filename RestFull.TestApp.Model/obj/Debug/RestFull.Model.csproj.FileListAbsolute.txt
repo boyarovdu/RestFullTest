@@ -1,0 +1,7 @@
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\bin\Debug\EntityFramework.dll
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\bin\Debug\EntityFramework.xml
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\bin\Debug\RestFull.Model.exe.config
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\bin\Debug\RestFull.Model.exe
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\bin\Debug\RestFull.Model.pdb
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\obj\Debug\RestFull.Model.exe
+c:\users\david\documents\visual studio 2012\Projects\RestFull.TestApp\RestFull.TestApp.Model\obj\Debug\RestFull.Model.pdb
