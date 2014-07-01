@@ -15,6 +15,8 @@ namespace Rest.Model.Abstract
 
         bool RemoveUserById(int id);
 
-        void InsertOrUpdate(User user); 
+        bool Insert(User user);
+        
+        void Update(User user);
     }
 }

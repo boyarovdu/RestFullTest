@@ -42,17 +42,38 @@ namespace Rest.Model.Concrete
             return false;
         }
 
-        public void InsertOrUpdate(User user)
+        //public void InsertOrUpdate(User user)
+        //{
+        //    if (user.Id == default(int))
+        //    {
+        //        context.Users.Add(user);
+        //    }
+        //    else
+        //    {
+        //        context.Entry(user).State = EntityState.Modified;
+        //    }
+
+        //    context.SaveChanges();
+        //}
+
+        public bool Insert(User user)
         {
-            if (user.Id == default(int))
+            try
             {
                 context.Users.Add(user);
-            }
-            else
-            {
-                context.Entry(user).State = EntityState.Modified;
-            }
+                context.SaveChanges();
 
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public void Update(User user)
+        {
+            context.Entry(user).State = EntityState.Modified;
             context.SaveChanges();
         }
     }

@@ -16,6 +16,8 @@ namespace Rest.Model.DbInitializers
         {
             context.Users.Add(new User { Name = "Alex", Age = 20 });
             context.Users.Add(new User { Name = "Tom", Age = 37 });
+
+            context.SaveChanges();
         }
     }
 }

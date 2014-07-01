@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace Rest.Model.Concrete
 {
-    class DatabaseContext : DbContext
+    public class DatabaseContext : DbContext
     {
         public DatabaseContext()
             :base("TestDbConnection")
         {
 #if DEBUG
             Database.SetInitializer(new DbInitializers.TestInitializer());
+            Database.Initialize(false);
 #endif  
         }
 

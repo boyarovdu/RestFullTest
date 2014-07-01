@@ -21,26 +21,58 @@ namespace Rest.WebUI.Controllers.API
         }
 
         // GET api/<controller>
-        public IEnumerable<User> GetAll()
+        public IEnumerable<User> GetAllUsers()
         {
             return repo.GetAll();
         }
 
-        public User GetById(int id)
+        // GET api/<controller>/{id}
+        public User GetUserById(int id)
         {
-            return repo.Find(id);
+            User user = repo.Find(id);
+
+            if (user == null)
+            {
+                throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
+            }
+            return user;
         }
 
+        // DELETE api/<controller>
         [HttpDelete]
-        public void Delete(int id)
+        public void DeleteUser(int id)
         {
             repo.RemoveUserById(id);
         }
 
+        // POST api/<controller>
         [HttpPost]
-        public void InsertOrUpdate(User user)
+        public void CreateUser(User user)
         {
-            repo.InsertOrUpdate(user);
+            repo.Insert(user);
+        }
+
+        // PUT api/<controller>
+        [HttpPut]
+        public HttpResponseMessage UpdateUser(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    repo.Update(user);
+                }
+                catch (Exception)
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+
+                return Request.CreateResponse(HttpStatusCode.OK, user);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            }
         }
     }
 }

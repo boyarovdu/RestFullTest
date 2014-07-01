@@ -33,3 +33,38 @@ C:\Users\David\Documents\Visual Studio 2012\Projects\RestFull.TestApp\RestFull.T
 C:\Users\David\Documents\Visual Studio 2012\Projects\RestFull.TestApp\RestFull.TestApp\bin\System.Web.Mvc.xml
 C:\Users\David\Documents\Visual Studio 2012\Projects\RestFull.TestApp\RestFull.TestApp\bin\RestFull.Model.exe
 C:\Users\David\Documents\Visual Studio 2012\Projects\RestFull.TestApp\RestFull.TestApp\bin\RestFull.Model.pdb
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\RestFull.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\RestFull.pdb
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\EntityFramework.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Newtonsoft.Json.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Ninject.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Ninject.Web.Common.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\RestFull.Model.exe
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Net.Http.Formatting.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Helpers.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Http.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Http.WebHost.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Mvc.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Razor.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.WebPages.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\RestFull.Model.pdb
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\EntityFramework.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Ninject.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Ninject.Web.Common.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Mvc.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\Newtonsoft.Json.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Net.Http.Formatting.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Helpers.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Http.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Http.WebHost.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.Razor.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.WebPages.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\obj\Debug\RestFull.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\obj\Debug\RestFull.dll
+C:\Users\David\Documents\GitHub\RestFullTest\RestFull.TestApp\obj\Debug\RestFull.pdb

@@ -1,0 +1,25 @@
+﻿body {
+    font-size: 1em;
+    font-family: Cambria, Georgia;
+}
+
+
+div#userTableOutput {
+    border: 1px solid black;
+    /*float: left;*/
+    display:inline-block;
+    padding: 10px;
+    margin: 15px;
+}
+
+    div#userTableOutput td, div#userTableOutput th {
+        padding: 5px;
+    }
+
+button.deleteUser, button.editUser {
+    background-color:#666;
+    color:white;
+    border: 0px;
+    width:50px;
+    cursor:pointer;
+}
