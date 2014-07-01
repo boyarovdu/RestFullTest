@@ -21,12 +21,22 @@ var usersServer = (function () {
 
     var updateUser = function (user) {
 
-        alert("Update calls 1");
-        return $.ajax(userServiceApiUrl, { contentType:"application/json", type: "PUT", data: JSON.stringify(user) });
+        return $.ajax(userServiceApiUrl, { contentType: "application/json", type: "PUT", data: JSON.stringify(user) });
     };
 
-    return {
+    var addUser = function (user) {
 
+        return $.ajax(userServiceApiUrl, { type: "POST", contentType: "application/json", data: JSON.stringify(user) });
+    }
+
+    var deleteUser = function (id) {
+
+        return $.ajax(userServiceApiUrl + "/" + id, { type: "DELETE" });
+    }
+
+    return {
+        deleteUser: deleteUser,
+        addUser: addUser,
         updateUser: updateUser,
         getUsers: getUsers,
         getUser: getUser
@@ -67,6 +77,17 @@ var usersServer = (function () {
         usersServer.getUser(id).done(showUserForEdit);
     }
 
+    var createUser = function () {
+
+        var user = { Id: 0, Name: "", Age: "" };
+        showUserForEdit(user);
+    }
+
+    var deleteUser = function () {
+        var id = getId(this);
+        usersServer.deleteUser(id).done(refreshUsers);
+    }
+
     var clearEdit = function () {
 
         $("userEditOutput").empty();
@@ -80,13 +101,28 @@ var usersServer = (function () {
             Age: $("#age").val()
         };
 
-        usersServer.updateUser(user).done(refreshUsers, clearEdit);
+        //usersServer.updateUser(user).done(refreshUsers, clearEdit);
+
+        var operation;
+
+        if (user.Id != 0) {
+            operation = usersServer.updateUser(user);
+        }
+        else {
+            operation = usersServer.addUser(user);
+        }
+
+        operation.done(refreshUsers, clearEdit);
+
+        return false;
     }
 
     var wireEvents = function () {
 
         $(document).on("click", ".editUser", editUser);
         $(document).on("click", "#saveUser", saveUser);
+        $(document).on("click", "#createUser", createUser);
+        $(document).on("click", ".deleteUser", deleteUser);
     }
 
     var getId = function (element) {

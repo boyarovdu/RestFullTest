@@ -40,16 +40,34 @@ namespace Rest.WebUI.Controllers.API
 
         // DELETE api/<controller>
         [HttpDelete]
-        public void DeleteUser(int id)
+        public HttpResponseMessage DeleteUser(int id)
         {
-            repo.RemoveUserById(id);
+            if (repo.RemoveUserById(id))
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, User);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError);
+            }
         }
 
         // POST api/<controller>
         [HttpPost]
-        public void CreateUser(User user)
+        public HttpResponseMessage CreateUser(User user)
         {
-            repo.Insert(user);
+            if (ModelState.IsValid)
+            {
+                repo.Insert(user);
+
+                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, user);
+                response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = user.Id }));
+                return response;
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            }
         }
 
         // PUT api/<controller>

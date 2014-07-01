@@ -6,6 +6,8 @@
 <div id="userTableOutput">
 </div>
 
+<button id="createUser" class="ajaxButtons" style="display:block; margin:5px 15px;">Create new User</button>
+
 <div id="userEditOutput">
 </div>
 
@@ -21,8 +23,8 @@
                 <td>{{Name}}</td>
                 <td>{{Age}}</td>
                 <td>
-                    <button class="editUser">Edit</button>
-                    <button class="deleteUser">Delete</button>
+                    <button class="editUser ajaxButtons">Edit</button>
+                    <button class="deleteUser ajaxButtons">Delete</button>
                 </td>
             </tr>
             {{/each}}
